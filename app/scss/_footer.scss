@@ -1,0 +1,97 @@
+.footer-nav {
+	padding: 20px 0;
+	&__list {
+		position: relative;
+    	z-index: 1;
+		padding: 0 15px;
+		list-style: none;
+    	text-align: center;
+    	@media (max-width: 799px) {
+			text-align: left;
+		}
+	}
+
+	&__item {
+		display: inline-block;
+		
+		a {
+			display: block;
+			padding: 10px;
+		    color: #101219;
+		    font-family: 'Roboto', sans-serif;
+		    font-weight: 500;
+    		font-size: 16px;
+    		text-decoration: none;
+    		&:hover {
+    			background: #33a296;
+    			color: #fff;
+    		}
+    		@media (max-width: 650px) {
+				display: inline-block;
+			}
+		}
+		&_active {
+			a {
+				background: #33a296;
+				color: #fff;
+			}
+		}
+		@media (max-width: 650px) {
+			display: block;
+			text-align: center;
+		}
+	}
+}
+
+.footer-nav__item_visible-lg {
+	@media (max-width: 1199px) {
+		display: none;
+	}
+}
+
+.footer {
+	padding: 35px 0;
+	background: #ececec;
+	color: #7f7f7f;
+
+	&__copyright {
+		float: left;
+		width: calc(100% - 300px);
+		font-family: 'Open Sans', sans-serif;
+		@media (min-width: 1025px) {
+			padding-top: 14px;
+		}
+		@media (max-width: 600px) {
+			float: none;
+			margin-bottom: 30px;
+			width: 100%;
+			text-align: center;
+		}
+		span {
+			@media (max-width: 1024px) {
+				display: block;
+			}
+			@media (max-width: 700px) {
+				display: inline;
+			}
+		}
+	}
+
+	&__site-creator {
+		float: right;
+		color: #000;
+		font-family: 'Arial', sans-serif;
+    	font-size: 12px;
+    	span {
+    		display: inline-block;
+		    width: 117px;
+		    text-align: right;
+		    vertical-align: middle;
+    	}
+    	@media (max-width: 600px) {
+			float: none;
+			width: 100%;
+			text-align: center;
+		}
+	}
+}

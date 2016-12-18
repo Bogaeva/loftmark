@@ -1,0 +1,49 @@
+$black: #101219;
+$white: #fff;
+$turquoise: #33a296;
+$purple-light: #6b5a8d;
+$orange: #edb660;
+$gray-light: #f1f4f7;
+
+@font-face {
+	font-family: 'OpenGost Type A TT';
+	src: url('../fonts/opengosttypeatt/OpenGostTypeATT-Regular.eot');
+	src: url('../fonts/opengosttypeatt/OpenGostTypeATT-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/opengosttypeatt/OpenGostTypeATT-Regular.woff2') format('woff2'),
+		url('../fonts/opengosttypeatt/OpenGostTypeATT-Regular.woff') format('woff'),
+		url('../fonts/opengosttypeatt/OpenGostTypeATT-Regular.ttf') format('truetype'),
+		url('../fonts/opengosttypeatt/OpenGostTypeATT-Regular.svg#OpenGostTypeATT-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+main {
+	margin-top: 94px;
+    overflow: hidden;
+    @media (max-width: 767px) {
+		margin-top: 50px;
+	}
+}
+
+.container {
+	padding: 0 30px;
+	width: 1366px !important;
+	max-width: 100%;
+	@media (max-width: 600px) {
+		padding: 0 15px;
+	}
+}
+.row {
+	margin-right: 0;
+    margin-left: 0;
+}
+
+.btn:focus, 
+.btn:active:focus, 
+.btn.active:focus, 
+.btn.focus, 
+.btn:active.focus, 
+.btn.active.focus,
+button:focus {
+	outline: none;
+}

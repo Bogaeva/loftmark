@@ -1,0 +1,129 @@
+.form-block {
+	padding: 80px 0 40px;
+	background: $purple-light;
+	text-align: center;
+	color: $white;
+	font-family: 'Roboto', sans-serif;
+
+	.container {
+		position: relative;
+	}
+
+	&__title {
+		font-family: 'OpenGost Type A TT';
+		font-size: 55px;
+		text-transform: uppercase;
+	}
+
+	&__note {
+		font-weight: 300;
+		font-size: 25px;
+	}
+
+	form {
+		width: 790px;
+	    max-width: 100%;
+	    margin: auto;
+	    @media (max-width: 800px) {
+			padding-bottom: 115px;
+		}
+		@media (max-width: 479px) {
+			padding-bottom: 285px;
+		}
+	}
+
+	.form-group {
+		padding: 0 15px;
+		&:not(.form-group_question) {
+			float: left;
+			width: 50%;
+			@media (max-width: 479px) {
+				float: none;
+				width: 100%;
+			}
+		}
+		&_name {
+			.form-control {
+				background: transparent url("../img/arrow-to-right.png") no-repeat 0 100%;
+				background-size: contain;
+			}
+		}
+		&_tel {
+			.form-control {
+				background: transparent url("../img/arrow-to-left.png") no-repeat 0 100%;
+				background-size: contain;
+			}
+		}
+		&_question {
+			.form-control {
+				padding-bottom: 23px;
+    			height: 44px;
+				background: transparent url("../img/form-line.png") no-repeat 0 100%;
+				background-size: contain;
+			}
+		}
+	}
+
+	label {
+		font-weight: 400;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+
+	.form-control {
+		color: $white;
+		font-family: 'Roboto', sans-serif;
+	    padding: 0 27px 18px;
+	    font-size: 16px;
+		border: 0;
+		box-shadow: none;
+	}
+	.form-btn {
+		display: block;
+		position: relative;
+    	z-index: 1;
+	    margin: 60px auto;
+	    width: 406px;
+	    height: 124px;
+	    background: transparent url(../img/form-btn.png) no-repeat center;
+	    background-size: cover;
+	    border: 0;
+	    font-weight: 500;
+	    font-size: 24px;
+	    text-transform: uppercase;
+	    &:hover {
+	    	color: #aeaeae;
+	    	background: transparent url(../img/form-btn-hover.png) no-repeat center;
+	    	background-size: cover;
+	    }
+	    @media (max-width: 568px) {
+			width: 245px;
+    		height: 74px;
+    		font-size: 16px;
+		}
+	}
+
+	.call-tel {
+		display: inline-block;
+		margin-bottom: 15px;
+		color: $white;
+		font-size: 24px;
+		text-decoration: none;
+	}
+
+	.call-email {
+		display: inline-block;
+		color: $white;
+		font-size: 18px;
+		text-decoration: underline;
+	}
+
+	&__man {
+		position: absolute;
+		right: -277px;
+		bottom: -218px;
+		@media (max-width: 1366px) {
+			// left: 65%;
+		}
+	}
+}

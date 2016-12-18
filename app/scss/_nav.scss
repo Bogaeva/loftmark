@@ -1,0 +1,123 @@
+.navbar-default {
+	background: $white;
+	border: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	text-align: center;
+
+	.container {
+		@media (min-width: 931px) and (max-width: 991px) {
+			width: 100%;
+		}
+		@media (max-width: 767px) {
+			padding: 0 15px;
+		}
+	}
+	.navbar-nav {
+
+		&:not(.navbar-right) {
+			display: inline-block;
+    		float: none;
+    		@media (max-width: 767px) {
+				display: block;
+				margin-top: 0;
+				padding: 40px 0;
+				background: #5eaf9b;
+			}
+		}
+		> li {
+			@media (min-width: 768px) {
+				padding: 27px 0;
+			}
+			
+			> a {
+				padding: 10px;
+				color: $black;
+				@media (min-width: 768px) and (max-width: 950px) {
+					font-size: 10px;
+				}
+				&:hover {
+					background: #33a296;
+					color: $white;
+				}
+				@media (max-width: 767px) {
+					display: inline-block;
+				}
+			}
+			&.active {
+				a {
+					background: #33a296;
+					color: $white;
+					&:hover,
+					&:focus {
+						background: #33a296;
+						color: $white;
+					}
+				}
+			}
+		}
+		&.navbar-right {
+			> li {
+				> a {
+					&:hover {
+						background: none;
+						color: $turquoise;
+						.icon-key {
+							background: url("../img/key-hover.png") no-repeat top;
+							background-size: contain;
+						}
+					}
+				}
+				@media (max-width: 767px) {
+					display: inline-block;
+				}
+			}
+			img {
+				margin-right: 5px;
+    			vertical-align: top;
+			}
+		}
+		.icon-key {
+			display: inline-block;
+			margin-right: 5px;
+			width: 39px;
+			height: 19px;
+			background: url("../img/key.png") no-repeat top;
+			background-size: contain;
+			vertical-align: middle;
+			@media (min-width: 768px) and (max-width: 950px) {
+				width: 30px;
+    			height: 15px;
+			}
+		}
+	}
+	.navbar-toggle {
+		border: 0;
+		.icon-bar {
+			background: #1e1e1c;
+		}
+		&:hover,
+		&:focus {
+			background: none;
+			.icon-bar {
+				background: $turquoise;
+			}
+		}
+	}
+	.navbar-collapse {
+		border: 0;
+	}
+}
+
+.navbar-brand {
+	@media (max-width: 767px) {
+		padding: 7px 15px;
+	}
+	> img {
+		@media (max-width: 767px) {
+			width: 136px !important;
+			height: 40px !important;
+		}
+	}
+}

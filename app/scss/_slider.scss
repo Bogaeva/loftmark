@@ -1,0 +1,111 @@
+.slider-block {
+	padding-bottom: 1px;
+	background: $gray-light;
+	.container {
+		position: relative;
+		padding: 0;
+		text-align: center;
+	}
+	&__top {
+		padding: 65px 15px;
+		background: $gray-light;
+		text-align: center;
+	}
+	&__top-title {
+		font-family: 'OpenGost Type A TT';
+		font-size: 55px;
+		text-transform: uppercase;
+	}
+	&__top-caption {
+		margin: auto;
+		width: 600px;
+		max-width: 100%;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+	}
+
+	.fotorama {
+		display: inline-block;
+		max-width: 100%;
+	}
+
+	.btn-default {
+		position: absolute;
+		right: 13%;
+		bottom: 5%;
+		width: 192px;
+		background: $turquoise;
+		border: 1px solid $white;
+		color: $white;
+		text-transform: uppercase;
+    	border-radius: 0;
+    	font-family: 'OpenGost Type A TT';
+		font-size: 20px;
+		@media (max-width: 567px) {
+			position: static;
+		}
+	}
+
+	.nav-tabs {
+		padding: 40px 0 60px;
+		text-align: center;
+		border: 0;
+		li {
+			display: inline-block;
+			float: none;
+			a {
+				position: relative;
+				padding: 5px 10px;
+				color: #585158;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 500;
+				font-size: 21px;
+				border-radius: 0;
+				&:before {
+					display: none;
+					content: '';
+					position: absolute;
+					top: 100%;
+					left: 50%;
+					margin-left: -24px;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 18px 24px 0 24px;
+					border-color: $turquoise transparent transparent transparent;
+				}
+				&:hover {
+					color: $white;
+					border-color: transparent;
+					background: $turquoise;
+					&:before {
+						display: block;
+					}
+				}
+			}
+			&.active {
+				a {
+					border-color: transparent;
+					color: $white;
+					background: $turquoise;
+					&:before {
+						display: block;
+					}
+				}
+				
+			}
+		}
+	}
+
+	.tab-content {
+		margin: auto;
+		padding: 0 15px 40px;
+		width: 1042px;
+		max-width: 100%;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		font-size: 18px;
+	}
+}
+
