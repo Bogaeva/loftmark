@@ -37,11 +37,7 @@ $(document).ready(function() {
 	});
 
 	// form validate 
-	$("form").validate({
-		rules: {
-			field_tel: 'customphone'
-		}
-	});
+	$("form").validate();
 
 });
 
@@ -89,7 +85,7 @@ var currentTallest = 0,
  });
 }
 
-// form validate number tel
-$.validator.addMethod('customphone', function (value, element) {
-    return this.optional(element) || /^(\+91-|\+91|0)?\d{11}$/.test(value);
-}, "Please enter a valid phone number");
+// add mask for input with tel
+$(function(){
+  $("#tel").mask("8(999) 999-9999");
+});

@@ -633,11 +633,13 @@ button:focus {
     .form-block .form-group_tel .form-control {
       background: transparent url("../img/arrow-to-left.png") no-repeat 0 100%;
       background-size: contain; }
-    .form-block .form-group_question .form-control {
-      padding-bottom: 23px;
-      height: 44px;
-      background: transparent url("../img/form-line.png") no-repeat 0 100%;
-      background-size: contain; }
+    .form-block .form-group_question {
+      clear: both; }
+      .form-block .form-group_question .form-control {
+        padding-bottom: 23px;
+        height: 44px;
+        background: transparent url("../img/form-line.png") no-repeat 0 100%;
+        background-size: contain; }
   .form-block label {
     font-weight: 400;
     font-size: 16px;
