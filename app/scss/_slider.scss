@@ -25,9 +25,32 @@
 		font-size: 16px;
 	}
 
-	.fotorama {
-		display: inline-block;
-		max-width: 100%;
+	.carousel-wrapper {
+		margin: auto;
+		width: 60%;
+		@media (max-width: 1024px) {
+			width: 100%;
+		}
+	}
+
+	.owl-carousel .owl-stage-outer {
+		overflow: visible;
+	}
+
+	.owl-prev,
+	.owl-next {
+		position: absolute;
+	    top: 0;
+	    width: 34%;
+	    bottom: 0;
+	}
+
+	.owl-prev {
+		right: 100%;
+	}
+
+	.owl-next {
+		left: 100%;
 	}
 
 	.btn-default {

@@ -36,6 +36,25 @@ $(document).ready(function() {
 		$(this).closest(".interest-block__comment").hide();
 	});
 
+	// slider with hover controls
+	var owl = $(".owl-carousel");
+	owl.owlCarousel({
+		items:1,
+		addClassActive : true,
+		loop: true,
+		nav: true,
+		mouseDrag: false,
+		dots: false,
+		autoplay: true,
+		navText: false
+	});
+	$(".owl-next").mouseover(function(){
+		owl.trigger('next.owl.carousel');
+	});
+	$(".owl-prev").mouseover(function(){
+		owl.trigger('prev.owl.carousel');
+	});
+
 	// form validate 
 	$("form").validate();
 

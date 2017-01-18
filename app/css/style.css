@@ -527,9 +527,24 @@ button:focus {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px; }
-  .slider-block .fotorama {
-    display: inline-block;
-    max-width: 100%; }
+  .slider-block .carousel-wrapper {
+    margin: auto;
+    width: 60%; }
+    @media (max-width: 1024px) {
+      .slider-block .carousel-wrapper {
+        width: 100%; } }
+  .slider-block .owl-carousel .owl-stage-outer {
+    overflow: visible; }
+  .slider-block .owl-prev,
+  .slider-block .owl-next {
+    position: absolute;
+    top: 0;
+    width: 34%;
+    bottom: 0; }
+  .slider-block .owl-prev {
+    right: 100%; }
+  .slider-block .owl-next {
+    left: 100%; }
   .slider-block .btn-default {
     position: absolute;
     right: 13%;
