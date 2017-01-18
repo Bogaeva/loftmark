@@ -55,6 +55,16 @@ $(document).ready(function() {
 		owl.trigger('prev.owl.carousel');
 	});
 
+	$(".nav-tabs a").on("click", function(){
+		var te = $(this).attr('href');
+		$(".owl-carousel").removeClass('visible');
+		$(".owl-carousel").each(function(){
+			if ($(this).attr('data-name') == te) {
+				$(this).addClass('visible');
+			} 
+		});
+	});
+
 	// form validate 
 	$("form").validate();
 
